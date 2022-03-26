@@ -1,17 +1,20 @@
 let palabra;
 let severyn = "advictoria mx-2 inline-block text-center text-4xl rounded-md border-solid border-b-4 border-black w-10";
-let listaPalabras = ['classe', 'silla', 'imagen', 'severyn', 'pantalla','orangutan', 'Ruiseñor'];
+let listaPalabras = ['classe', 'silla', 'imagen', 'severyn', 'pantalla','largo', 'Ruiseñor'];
 let contFoto= 2;
 let separarPalabra; 
 
 
 function gameOver(){
 
+    $(".boton").prop('disabled', true);
+ 
+
     let timerInterval
         Swal.fire({
           title: '<h1>GameOver Machirulo</h1>',
           html: 'Se reiniciara en <b></b> milisegundos.',
-          timer: 1000,
+          timer: 100000,
           timerProgressBar: true,
           didOpen: () => {
             Swal.showLoading()
@@ -21,7 +24,8 @@ function gameOver(){
             }, 100)
           },
           willClose: () => {
-            clearInterval(timerInterval)
+            clearInterval(timerInterval);
+               location.reload();
           }
         }).then((result) => {
         })
@@ -31,7 +35,7 @@ function gameOver(){
 
 function youWin(){
     Swal.fire({
-        title: 'Has ganado no eres un machirulo.',
+        title: 'Has ganado, no eres un machirulo.',
         width: 600,
         padding: '3em',
         color: '#716add',
@@ -43,6 +47,7 @@ function youWin(){
           no-repeat
         `
       })
+      setTimeout(function () { location.reload(true); }, 5000);
 }
 
 function comprobarVictoria(){
