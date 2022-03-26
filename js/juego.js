@@ -47,7 +47,7 @@ function youWin(){
           no-repeat
         `
       })
-      setTimeout(function () { location.reload(true); }, 5000);
+      setTimeout(function () { location.reload(true); }, 9000);
 }
 
 function comprobarVictoria(){
