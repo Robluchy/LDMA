@@ -5,50 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahorcado</title>
-    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="juego.js" ></script>
     
 </head>
 
-<body class="grid">
+<body>
     
-    <img src="img/a1.jpg" alt="">
 
-    <section class="flex">
+    <img id="foto" class="w-1/6 mt-28 mx-auto" src="img/a1.jpg" alt="">
 
-        <div id="barras"></div>
+    <section class="flex justify-evenly my-20">
+
+        <div id="texto"></div>
 
     </section>
 
-    <main >
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >a</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >b</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >c</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >d</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >e</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >f</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >g</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >h</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >i</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >j</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >k</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >l</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >m</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >n</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >ñ</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >o</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >p</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >q</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >r</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >s</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >t</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >u</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >v</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >w</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >x</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >y</button>
-        <button class="bg-gray-500 text-black font-medium rounded-lg text-sm px-4 py-1 mr-1 mb-1" >z</button>
+    <main class="w-1/3 mx-auto" >
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >a</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >b</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >c</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >d</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >e</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >f</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >g</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >h</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >i</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >j</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >k</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >l</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >m</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >n</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >ñ</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >o</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >p</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >q</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >r</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >s</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >t</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >u</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >v</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >w</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >x</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >y</button>
+        <button class="boton  text-black font-medium rounded-lg text-2xl px-5 uppercase py-2 my-2 mx-1" >z</button>
     </main>
 
 </body>
