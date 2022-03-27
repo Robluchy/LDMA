@@ -1,6 +1,6 @@
 let palabra;
-let severyn = "advictoria mx-2 inline-block text-center text-4xl rounded-md border-solid border-b-4 border-black w-10";
-let listaPalabras = ['classe', 'silla', 'imagen', 'severyn', 'pantalla','largo', 'Ruiseñor'];
+let nuevaclass = "advictoria mx-2 inline-block text-center text-4xl rounded-md border-solid border-b-4 border-black w-10";
+let listaPalabras = ['Repollo', 'Nabo', 'Rábano', 'Zanahoria','limón', 'naranja', 'mango', 'banana', 'clase', 'silla', 'imagen', 'severyn', 'pantalla','largo', 'Ruiseñor'];
 let contFoto= 2;
 let separarPalabra; 
 
@@ -78,7 +78,7 @@ function pintaPalabra(){
     
     for (let i = 0; i < separarPalabra.length; i++) {
 
-        guardarElemento.append(`<div class="letra${separarPalabra[i]} ${severyn}"></div>`);
+        guardarElemento.append(`<div class="letra${separarPalabra[i]} ${nuevaclass}"></div>`);
         
     }
 
