@@ -1,6 +1,8 @@
 
 const tablero = [["", "", ""], ["", "", ""], ["", "", ""]];
 
+//class list es de jquery
+
 function startP(){
     console.log("startP");
    document.getElementById("#tabla").classList.remove("hidden");
