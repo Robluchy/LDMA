@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="bg-slate-700 font-mono" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>three in a row</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="game.js" ></script>
+</head>
+<body>
+
+
+    <aside id="uno" class="mt-12 flex justify-around">
+    
+        <button class=" text-black bg-white font-medium rounded-lg text-2xl px-12 uppercase py-2 my-2 mx-1" onclick="startP()">X</button>
+
+        <button class=" text-black bg-white font-medium rounded-lg text-2xl px-12 uppercase py-2 my-2 mx-1" onclick="startM()">O</button>
+
+    </aside>
+    
+    <main id="tabla" class="hidden grid-cols-3 mx-auto mt-20 w-2/5">
+
+        <div id="celda00" class="py-12 border-r-2 text-center border-b-2 border-black" onclick="throwP(0,0)"></div>
+
+        <div id="celda01" class="py-12 border-r-2 text-center border-b-2 border-l-2 border-black" onclick="throwP(0,1)"></div>
+
+        <div id="celda02" class="py-12 border-b-2 text-center border-l-2 border-black" onclick="throwP(0,2)"></div>
+
+
+        <div id="celda10" class="py-12 border-t-2 text-center border-b-2 border-r-2 border-black" onclick="throwP(1,0)"></div>
+
+        <div id="celda11" class="py-12 border-2 text-center border-black" onclick="throwP(1,1)"></div>
+
+        <div id="celda12" class="py-12 border-b-2 text-center border-t-2 border-l-2 border-black " onclick="throwP(1,2)"></div>
+
+
+        <div id="celda20" class="py-12  border-t-2 text-center border-r-2 border-black" onclick="throwP(2,0)"></div>
+
+        <div id="celda21" class="py-12 border-t-2 text-center border-l-2 border-r-2 border-black" onclick="throwP(2,1)"></div>
+
+        <div id="celda22" class="py-12 border-t-2 text-center border-l-2 border-black" onclick="throwP(2,2)"></div>
+
+    </main>
+
+
+    <div id="botones" class="hidden mt-12 justify-around">
+       
+        <button class="text-black bg-white font-medium rounded-lg text-2xl px-20 uppercase py-2 my-2 mx-1" onclick="reset()" >Restart</button>
+    
+        <button class=" hidden" ></button>
+    </div>
+
+
+    <footer class="fixed w-full bottom-0  bg-gray-900 text-center lg:text-left">
+      
+        <div class="text-white text-center p-4">Dionny © 2022 Copyright</div>
+    
+    </footer>
+
+</body>
+</html>

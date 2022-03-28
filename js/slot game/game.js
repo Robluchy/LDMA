@@ -24,7 +24,7 @@ function spin() {
     if (num1 === num2 && num1 === num3) {
       const Toast = Swal.mixin({
         toast: true,
-        position: 'botton-end',
+        position: 'bottom-end',
         showConfirmButton: false,
         timer: 2000,
         timerProgressBar: true,
@@ -41,7 +41,7 @@ function spin() {
     } else {
       const Toast = Swal.mixin({
         toast: true,
-        position: 'botton-end',
+        position: 'bottom-end',
         showConfirmButton: false,
         timer: 2000,
         timerProgressBar: true,
