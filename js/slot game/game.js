@@ -1,70 +1,59 @@
 
 
-function photoRandom() {
+function random() {
     return Math.floor(Math.random() * 2) + 1;
 }
 
-function getElement(id) {
+function id(id) {
     return document.getElementById(id);
 }
 
 function spin() {
-    let item1 = getElement('7');
-    let item2 = getElement('bar');
-    let item3 = getElement('heart');
+    let item1 = id('7');
+    let item2 = id('bar');
+    let item3 = id('heart');
 
-    let num1 = photoRandom();
-    let num2 = photoRandom();
-    let num3 = photoRandom();
+    let num1 = random();
+    let num2 = random();
+    let num3 = random();
 
-    item1.innerHTML = `${num1}`;
-    item2.innerHTML = `${num2}`;
-    item3.innerHTML = `${num3}`;
+    item1.src = `img/${num1}.png`;
+    item2.src = `img/${num2}.png`;
+    item3.src = `img/${num3}.png`;
 
     if (num1 === num2 && num1 === num3) {
-        youWin();
-    } else {
-        gameOver();
-    }
-}
-
-function gameOver(){
-
-    let timerInterval
-        Swal.fire({
-          title: '<h1>GameOver Machirulo</h1>',
-          html: 'Se reiniciara en <b></b> milisegundos.',
-          timer: 100000,
-          timerProgressBar: true,
-          didOpen: () => {
-            Swal.showLoading()
-            const b = Swal.getHtmlContainer().querySelector('b')
-            timerInterval = setInterval(() => {
-              b.textContent = Swal.getTimerLeft()
-            }, 100)
-          },
-          willClose: () => {
-            clearInterval(timerInterval);
-               location.reload();
-          }
-        }).then((result) => {
-        })
-
-}
-
-function youWin(){
-    Swal.fire({
-        title: 'Has ganado, no eres un machirulo.',
-        width: 600,
-        padding: '3em',
-        color: '#716add',
-        background: '#fff url(img/trees.png)',
-        backdrop: `
-          rgba(0,0,123,0.4)
-          url("img/nyan-cat.gif")
-          left top
-          no-repeat
-        `
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'botton-end',
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
       })
-      setTimeout(function () { location.reload(true); }, 9000);
+      
+      Toast.fire({
+        icon: 'success',
+        title: 'Jackpot!'
+      })
+    } else {
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'botton-end',
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'error',
+        title: 'miss!'
+      })
+    }
 }
