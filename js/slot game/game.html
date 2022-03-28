@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html >
+<html class="bg-slate-700 font-mono" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,27 +11,26 @@
     <script src="game.js" ></script>
 </head>
 <body>
+
+    <div class=" justify-center gap-20 mt-64 flex">
+        
+        <img id="7" class=" shadow-lg shadow-violet-700 w-40 border border-black my-20 " src="img/7.png" alt="">
+        
+        <img id="bar" class=" shadow-lg shadow-violet-700 w-40 border border-black my-20 " src="img/bar.png" alt="">
+        
+        <img id="heart" class=" shadow-lg shadow-violet-700 w-40 border border-black my-20 " src="img/heart.png" alt="">
+
+        <button class="shadow-md shadow-white px-6 py-2 bg-yellow-500 text-black text-2xl uppercase rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-400 duration-300" onclick="spin()">
+            Try me!
+        </button>
     
+    </div> 
+
+    <footer class="fixed w-full bottom-0  bg-gray-900 text-center lg:text-left">
+      
+        <div class="text-white text-center p-4">Dionny © 2022 Copyright</div>
     
-<body>
-    <div class="center lever">
-        <button type="button" class="btn btn-primary" onclick="spin()">Lever</button>
-    </div>
-    <table class="center">
-        <tbody>
-            <tr>
-                <td>
-                    <span id="item1" class="slot-number">-</span>
-                </td>
-                <td>
-                    <span id="item2" class="slot-number">-</span>
-                </td>
-                <td>
-                    <span id="item3" class="slot-number">-</span>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    </footer>
 
 </body>
 </html>
