@@ -1,25 +1,31 @@
 
+
 const tablero = [["", "", ""], ["", "", ""], ["", "", ""]];
 
-//class list es de jquery
-
 function startP(){
-    console.log("startP");
-   document.getElementById("#tabla").classList.remove("hidden");
-   document.getElementById("#botones").classList.remove("hidden");
-   document.getElementById("#uno").classList.add("hidden");
+    
+    document.getElementById("tabla").classList.remove("hidden");
+    
+    document.getElementById("botones").classList.remove("hidden");
+    
+    document.getElementById("uno").classList.add("hidden");
+
 }
 
 function startM(){
-    console.log("startM");
-    document.getElementById("#tabla").classList.remove("hidden");
-    document.getElementById("#botones").classList.remove("hidden");
-    document.getElementById("#uno").classList.add("hidden");
+    
+    document.getElementById("tabla").classList.remove("hidden");
+    
+    document.getElementById("botones").classList.remove("hidden");
+    
+    document.getElementById("uno").classList.add("hidden");
+    
     throwM();
-  
+
  }
 
 function alertError() {
+
     const Toast = Swal.mixin({
         toast: true,
         position: 'center-end',
@@ -152,4 +158,9 @@ function reset() {
             document.getElementById("celda" + i + j).innerHTML = "";
         }
     }
+}
+
+
+function reload () {
+     location.reload();
 }
