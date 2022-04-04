@@ -35,7 +35,27 @@
 
         function ocultar(){
             $("div").hide("slow");
+           
         }
+
+        function pararInterval(){
+            clearInterval(intervalo);
+        }
+        function holamundoInterval2(numero){
+            console.log("holamundo"+numero);
+        }
+        var i = 0;
+        let manejadora2 = setInterval(function(){
+            holamundoInterval2(i);
+            i++;
+        },1000);
+
+        function holamundoInterval(){
+            console.log("holamundo");
+        }
+        //setTimeout(holamundoInterval, 3000);
+        let manejadora = setInterval(holamundoInterval, 3000);
+        setTimeout(pararInterval,5000);
 
         function mostrar(){
             $("div").show("slow");
