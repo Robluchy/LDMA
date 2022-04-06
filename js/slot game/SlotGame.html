@@ -1,5 +1,5 @@
 <!DOCTYPE html >
-<html class="bg-slate-700 font-mono" lang="en">
+<html class="bg-slate-100 font-mono" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,30 +8,58 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="game.js" ></script>
+
 </head>
 <body>
+    <div class=" justify-center gap-10 mt-5 flex">
 
-    <div class=" justify-center gap-20 mt-40 flex">
-        
-        <img id="7" class=" shadow-lg shadow-violet-700 w-40 border border-black my-20 " src="img/1.png" alt="">
-        
-        <img id="bar" class=" shadow-lg shadow-violet-700 w-40 border border-black my-20 " src="img/2.png" alt="">
-        
-        <img id="heart" class=" shadow-lg shadow-violet-700 w-40 border border-black my-20 " src="img/3.png" alt="">
+        <button class=" text-black bg-transparent font-medium rounded-lg text-xl px-12 uppercase py-2 my-2 mx-1" onclick="start()">New Game</button>
 
-        <button class="shadow-md shadow-white px-6 py-2 bg-yellow-500 text-black text-2xl uppercase rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-400 duration-300" onclick="spin()">
-            Try me!
-        </button>
-    
+        <div id="coin" class="hidden border-2 border-dotted text-center w-20 border-black"></div>
+        
+        <button class=" text-black bg-transparent font-medium rounded-lg text-xl px-12 uppercase py-2 my-2 mx-1" onclick="reset()">Reset</button>
+
+    </div>
+
+    <div class=" justify-center gap-20 mt-24 flex">
+        
+        <img id="7" class=" shadow-lg shadow-violet-700 w-40 border my-20 " src="img/0.png" alt="">
+        
+        <img id="bar" class=" shadow-lg shadow-violet-700 w-40 border my-20 " src="img/1.png" alt="">
+        
+        <img id="heart" class=" shadow-lg shadow-violet-700 w-40 border my-20 " src="img/2.png" alt="">
+
+        <button class="shadow-md shadow-white px-6 py-2 bg-yellow-500 text-black text-xl uppercase rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-400 duration-300"
+        onclick="spin()">
+           Try me!
+       </button>
+
     </div> 
 
+    <div class=" justify-center gap-20 mt-20 flex">
+        
+        <button class="shadow-md shadow-white px-6 py-2 bg-yellow-500 text-black text-xl uppercase rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-400 duration-300"
+        onclick="add10()">
+           Add 10 coin
+       </button>
+
+       <button class="shadow-md shadow-white px-6 py-2 bg-yellow-500 text-black text-xl uppercase rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-400 duration-300"
+       onclick="add25()">
+          Add 25 coin
+      </button>
+
+        <button class="shadow-md shadow-white px-6 py-2 bg-yellow-500 text-black text-xl uppercase rounded-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-400 duration-300"
+         onclick="add50()">
+            Add 50 coin
+        </button>
+
+    </div>
     <footer class="fixed w-full bottom-0  bg-gray-900 text-center lg:text-left">
       
         <div class="text-white text-center p-4">Dionny © 2022 Copyright</div>
     
     </footer>
-
+    <script src="game.js" ></script>
 </body>
 </html>
 
