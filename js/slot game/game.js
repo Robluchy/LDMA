@@ -32,7 +32,7 @@ function spin1(){
 
     item1 = id('7');
 
-    item1.src = 'img/'+  Math.floor(Math.random() * 4)+'.png';
+    item1.src = 'img/'+  Math.floor(Math.random() * 3)+'.png';
 
 }
 
@@ -40,7 +40,7 @@ function spin2(){
 
     item2 = id('bar');
 
-    item2.src = 'img/'+  Math.floor(Math.random() * 4)+'.png';
+    item2.src = 'img/'+  Math.floor(Math.random() * 3)+'.png';
 
 }
 
@@ -48,7 +48,7 @@ function spin3(){
 
     item3 = id('heart');
 
-    item3.src = 'img/'+  Math.floor(Math.random() * 4)+'.png';
+    item3.src = 'img/'+  Math.floor(Math.random() * 3)+'.png';
    
 }
 
