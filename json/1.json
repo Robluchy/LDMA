@@ -1,0 +1,13 @@
+{
+    "Frutas": [
+        { "Nombre":"Manzana" , "cantidad":10 }, 
+        { "Nombre":"Pera" , "cantidad":20 }, 
+        { "Nombre":"Naranja" , "cantidad":30 }],
+    
+    "Verduras": [
+        { "Nombre":"lechugas" , "cantidad":80 }, 
+        { "Nombre":"tomates" , "cantidad":15 }, 
+        { "Nombre":"pepinos" , "cantidad":50 }]
+        
+}
+    

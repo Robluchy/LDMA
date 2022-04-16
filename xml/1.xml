@@ -1,0 +1,48 @@
+
+<mensaje>
+
+    <remite>
+
+        <nombre>
+            bill
+        </nombre>
+
+        <email>
+            bill@gmail.
+        </email>
+
+    </remite>
+
+    <destinatario>
+        
+        <nombre>
+            alfred
+        </nombre>
+
+        <email>
+            alfred@gmail.
+        </email>
+
+    </destinatario>
+
+    <asunto>    
+        hola qu tal
+    </asunto>
+
+    <texto>     
+        
+        <parrafo>
+            ¿Hola qué tal?
+        </parrafo>
+        
+        <parrafo>
+            Hace mucho tiempo que no escribes. A ver si llamas y quedamos pronto
+        </parrafo>
+
+        <parrafo>
+            hola!
+        </parrafo>
+
+    </texto>
+
+</mensaje>

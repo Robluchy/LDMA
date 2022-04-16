@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<nodos>
+    <item>
+        <title>Título 1</title>
+        <link>Enlace 1</link>
+        <description>Descripcion 1</description>
+        <thumbnail>Thumbnail 1</thumbnail>
+    </item>
+    <item>
+        <title>Título 2</title>
+        <link>Enlace 2</link>
+        <description>Descripcion 2</description>
+        <thumbnail>Thumbnail 2</thumbnail>
+    </item>
+    <item>
+        <title>Título 3</title>
+        <link>Enlace 3</link>
+        <description>Descripcion 3</description>
+        <thumbnail>Thumbnail 3</thumbnail>
+    </item>
+</nodos>

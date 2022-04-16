@@ -1,0 +1,22 @@
+<articulos>
+	<articulo código="A1" color="amarillo">
+		<identificador>1</identificador>
+		<texto>Albaricoques</texto>
+		<precio>35.5</precio>
+	</articulo>
+	<articulo código="A2" color="rojo">
+		<identificador>2</identificador>
+		<texto>Cerezas</texto>
+		<precio>48.9</precio>
+	</articulo>
+	<articulo código="A3" color="rojo">
+		<identificador>3</identificador>
+		<texto>Fresas</texto>
+		<precio>29.95</precio>
+	</articulo>
+	<articulo código="A4" color="amarillo">
+		<identificador>4</identificador>
+		<texto>Melocotones</texto>
+		<precio>37.2</precio>
+	</articulo>
+</articulos>
