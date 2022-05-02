@@ -79,6 +79,11 @@ function add50() {
     coin.innerHTML = parseInt(coin.innerHTML) + 50;
 }
 
+// Language: javascript
+// cuando las monedas se acaban, se muestra un mensaje de error y se reinicia el juego con una nueva moneda
+// Path: js\slot game\game.js
+
+
 
 
 function checkWin() {
