@@ -108,11 +108,15 @@
         }
         ?>
             <div class="text-center">
-            <button class="rounded-xl bg-black px-24 py-2 text-white">Seleciona a tu nuevo empleado</button>
+                <button class="rounded-xl bg-black px-24 py-2 text-white">Seleciona a tu nuevo empleado</button>
             </div>
         </div>
     </div>
-
+    <footer class="fixed w-full bottom-0  bg-gray-900 text-center lg:text-left">
+      
+        <div class="text-white text-center p-4">Dionny © 2022 Copyright</div>
+    
+    </footer>
 </body>
 
 </html>
