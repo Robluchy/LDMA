@@ -29,7 +29,7 @@
                 ';
 
                 
-                if ($user["gender"] = "male") {
+                if ($user["gender"] == "male") {
                     echo '<i class="fa-solid fa-venus-mars"></i>';
                 } else {
                     echo '<i class="fa-solid fa-mars-double"></i>';
