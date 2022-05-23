@@ -23,7 +23,7 @@
                 if ($result->num_rows > 0) {
 
                     while($row = $result->fetch_assoc()) {
-                        echo "<button id='btn' onclick='ajaxCall(".$row['id_categoria'].")'>".$row['nombre_categoria']." </button><br>";
+                        echo "<button id='btn' onclick='ajaxCall(".$row['id'].")'>".$row['nombre']." </button><br>";
                     }
                 } else {
                     echo "0 results";

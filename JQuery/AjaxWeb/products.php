@@ -14,7 +14,7 @@
             echo "<img src='".$row['foto']."' class='w-20'/>";
             echo "<p>".$row['nombre']."</p>";
             echo "<p>".$row['precio']."</p>";
-            echo "<button onclick='addToCart(".$row['id_producto'].")'>Agregar al carrito</button>";
+            echo "<button onclick='addToCart(".$row['id'].")'>Agregar al carrito</button>";
             echo "</div>";
         }
     } else {
