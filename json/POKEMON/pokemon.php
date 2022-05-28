@@ -10,34 +10,23 @@
     <title>Document</title>
 </head>
 <div class="grid grid-cols-6 gap-5 p-20 ">
-
-<!-- echo '<img src="'.$josn['sprites']['front_default'].'">';
- print json_encode($josn);
-print_r($josn);
-echo $josn["name"];
-echo $josn["sprites"]["front_default"]; -->
-
-
-<!--
-src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'.$pokemon["id"].'.png"
-src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/'.$pokemon["id"].'.svg" -->
 <?php
 
-    $data = file_get_contents("https://pokeapi.co/api/v2/type/".$_GET['name']);
+    $name=$_GET["type"];
+    $data = file_get_contents("https://pokeapi.co/api/v2/type/$name");
     $josn = json_decode($data, true);
 
-    
-
+    echo ' <div
+    class="col-span-6 mt-5 bg-opacity-50 border border-gray-100 rounded shadow-lg cursor-pointer bg-gradient-to-b from-gray-200 backdrop-blur-20 to-gray-50 md:col-span-3 lg:col-span-2 ">
+';
+      foreach ($josn["pokemon"] as $pokemons) {
         echo '
-        <div
-        class="col-span-6 mt-5 bg-opacity-50 border border-gray-100 rounded shadow-lg cursor-pointer bg-gradient-to-b from-gray-200 backdrop-blur-20 to-gray-50 md:col-span-3 lg:col-span-2 ">
-            <div class="flex flex-row px-2 py-3 mx-3">
-
+        <div class="flex flex-row px-2 py-3 mx-3">
             <div class="flex flex-col mt-1 mb-2 ml-4">
-                <div class="text-sm text-gray-600">' . $josn["pokemon"]["0"]["name"] . '</div>
+                <div class="text-sm text-gray-600">' . $pokemons["pokemon"]["name"]. '</div>
             </div>
         </div>';
-    
+      }
 
 
 ?>
