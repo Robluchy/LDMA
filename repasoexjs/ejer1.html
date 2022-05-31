@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="jugar()">JUGAR</button>
+    <img src="0.png" id="img1" height="100px" width="100px">
+    <img src="1.png" id="img2" height="100px" width="100px">
+    <img src="2.png"  id="img3" height="100px" width="100px">
+
+    <!-- <input type="button" value="jugar" onclick="cambiarIMG(Math.floor(Math.random() * 6))"> -->
+    <script>
+
+
+    let item1 = id('img1');
+    let item2 = id('img2');
+    let item3 = id('img3');
+
+    let intervalo;
+    let intervalo1;
+    let intervalo2;
+
+function random() {
+    return Math.floor(Math.random() * 3 );
+}
+
+function id(id) {
+    return document.getElementById(id);
+}
+
+function spin1(){
+
+    item1 = id('img1');
+
+    item1.src = Math.floor(Math.random() * 3)+'.png';
+
+}
+
+function spin2(){
+
+    item2 = id('img2');
+
+    item2.src = Math.floor(Math.random() * 3)+'.png';
+
+}
+
+function spin3(){
+
+    item3 = id('img3');
+
+    item3.src = Math.floor(Math.random() *2)+'.png';
+   
+}
+
+function jugar() {
+
+    spin1();
+    spin2();
+    spin3();
+    
+}
+
+
+
+    </script>
+
+</body>
+</html>

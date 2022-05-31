@@ -23,7 +23,7 @@
         echo '
         <div class="flex flex-row px-2 py-3 mx-3">
             <div class="flex flex-col mt-1 mb-2 ml-4">
-                <div class="text-sm text-gray-600">' . $pokemons["pokemon"]["name"]. '</div>
+                <div class="text-sm text-gray-600"><a href="pokeDetails.php?name=' . $pokemons["pokemon"]["name"]. '">' . $pokemons["pokemon"]["name"]. '</a></div>
             </div>
         </div>';
       }
